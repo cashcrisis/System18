@@ -1,0 +1,1078 @@
+{
+  "info": {
+    "title": "System18: Russia",
+    "designer": "Ian D Wilson",
+    "orientation": "vertical",
+    "titleX": 540,
+    "titleY": -135,
+    "titleSize": 50,
+    "designerSize": 18,
+    "marketTokens": 2,
+    "mustSellInBlocks": false,
+    "currency": "₽#"
+  },
+    "links": {
+    "bgg": "https://boardgamegeek.com/thread/3238633/system18-18xx-microgame-format/page/1",
+    "rules": "https://www.dropbox.com/scl/fi/or38t89eczc5eki8e21y7/System18_Rules.pdf?rlkey=n9kblkl7kvnz96oobs6hsatk2&e=1&dl=0"
+  },
+  "colors":
+  {
+    "KR": "#aef359",
+    "KK": "#C49102",
+    "KB": "red", 
+    "RO": "#900053",
+    "MNN": "#FA8128",
+    "MK": "#FA9880",
+    "SPW": "#57a0d2",
+    "N": "#d2b55b"
+  },
+  "ipo": true,
+  "bank": "∞",
+  "tokens":[
+{
+    "icon": "ImperialEagle",
+    "quantity": 1
+ } 
+],
+  "players": [
+    {
+      "number": 2,
+      "capital": 315,
+      "certLimit": "16"
+    },
+    {
+      "number": 3,
+      "capital": 210,
+      "certLimit": "11"
+    }
+  ],
+  "pools": [
+
+  ],
+  "rounds": [
+    {
+      "name": "OR2",
+      "color": "green"
+    },
+    {
+      "name": "OR1",
+      "color": "yellow"
+    },
+    {
+      "name": "SR",
+      "color": "white"
+    }
+  ],
+  "turns": [
+    {
+      "name": "Stock Round",
+      "steps": [
+        "Sell any number of certificates",
+        "Buy one certificate"
+      ],
+      "ordered": true
+    },
+    {
+      "name": "Operating Round",
+      "steps": [
+        "Lay or upgrade track",
+        "Purchase a station",
+        "Run trains",
+        "Pay dividends",
+        "Purchase trains"
+      ],
+      "ordered": true
+    }
+  ],
+  "stock": {
+    "type": "1D",
+    "par": {
+      "values": [
+        150,
+        135,
+        120,
+        100,
+        90,
+        80,
+        75,
+        70,
+        65,
+        60,
+        55,
+        50
+      ]
+    },
+    "movement": {
+      "right": [
+        "Sold out",
+        "Paid dividends"
+      ],
+      "left": [
+        "Every share sold",
+        "Withheld revenue"
+      ]
+    },
+    "market": 
+      [
+       40,
+       45,
+       { "value": 50, "color": "gray" },
+       { "value": 55, "color": "gray" },
+       { "value": 60, "color": "gray" },
+       { "value": 65, "color": "gray" },
+       { "value": 70, "color": "gray" },
+       { "value": 80, "color": "gray" },
+       { "value": 90, "color": "gray" },
+       { "value": 100, "color": "gray" },
+       { "value": 120, "color": "gray" },
+       { "value": 135, "color": "gray" },
+       { "value": 150, "color": "gray" },
+       165,
+       180,
+       200,
+       220,
+       245,
+       270,
+       300,
+       330,
+       360,
+       400,
+       440,
+       490,
+       540,
+       600
+    ]
+  },
+  "trains": [
+    {
+      "name": "2",
+      "quantity": 6,
+      "price": 80,
+      "rust": "4",
+      "color": "yellow"
+    },
+    {
+      "name": "3",
+      "quantity": 5,
+      "price": 180,
+      "rust": "6",
+      "color": "green"
+    },
+    {
+      "name": "4",
+      "quantity": 2,
+      "price": 300,
+      "rust": "8",
+      "color": "green"
+    },
+    {
+      "name": "5",
+      "quantity": 2,
+      "price": 500,
+      "color": "brown"
+    },
+    {
+      "name": "6",
+      "quantity": 2,
+      "price": 630,
+      "color": "brown"
+    },
+    {
+      "name": "8",
+      "quantity": "∞",
+      "print": 5,
+      "price": 800,
+      "color": "brown"
+    }
+  ],
+  "privates": [
+    {
+      "id": "Private Company",
+      "idBackgroundColor": "yellow",
+      "name": "Tsarskoye Selo Railway",
+      "price": 20,
+      "revenue": 10
+    },
+    {
+      "name": "Moscow-Yaroslavl Railway",
+      "id": "Private Company",
+      "idBackgroundColor": "yellow",
+      "price": 40,
+      "revenue": 20,
+      "hex": "C8",
+      "description": "+10 Moscow"
+    },
+    {
+      "name": "Moscow-Ryazan Railway",
+      "id": "Private Company",
+      "idBackgroundColor": "yellow",
+      "price": 50,
+      "revenue": 25,
+      "hex": "C8",
+      "description": "+10 Moscow"
+    }
+  ],
+  "tokenTypes": {
+    "default": [
+      "free",
+      40
+    ],
+    "three": [
+      "free",
+      40,
+      100
+    ],
+    "minor": [
+      "free"
+    ]
+  },
+  "shareTypes": {
+    "default": [
+      {
+        "quantity": 1,
+        "label": "President's Certificate",
+        "shares": 2
+      },
+      {
+        "quantity": 8,
+        "shares": 1
+      }
+    ],
+    "minor": [
+      {
+        "quantity": 1,
+        "label":"President's Certificate",
+        "shares": 2
+      }
+    ],
+    "SPX": [
+
+    ]
+  },
+  "floatPercent": 60,
+  "companies": [
+    {
+      "name": "Dragon",
+      "abbrev": "D",
+      "logo": "system18/DGN",
+      "color": "green",
+      "tokens": "three",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "Griffin",
+      "abbrev": "G",
+      "logo": "system18/GFN",
+      "color": "gray",
+      "tokens": "three",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "Kraken",
+      "abbrev": "KKN",
+      "logo": "system18/KKN",
+      "color": "blue",
+      "tokens": "three",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "Phoenix",
+      "abbrev": "P",
+      "logo": "system18/PHX",
+      "color": "orange",
+      "tokens": "three",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "Sphinx",
+      "abbrev": "S",
+      "logo": "system18/SPX",
+      "color": "yellow",
+      "tokens": ["", "", "", "", ""],
+      "shares": "SPX",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one"
+    },    
+    {
+      "name": "Nikolaev",
+      "abbrev": "N",
+      "color": "N",
+      "tokens": "minor",
+      "shares": "minor",
+      "token": {
+        "label": "N",
+        "star5": "N",
+        "color": "white"
+      },
+      "tokenType": "minor",
+      "shareType": "minor"
+    },
+    {
+      "name": "moscow-nizhnii novgorod",
+      "abbrev": "MNN",
+      "color": "MNN",
+      "tokens": "minor",
+      "shares": "minor",
+      "token": {
+        "label": "MNN",
+        "star5": "MNN",
+        "color": "yellow"
+      },
+      "tokenType": "minor",
+      "shareType": "minor"
+    },
+    {
+      "name": "Moscow-Kursk",
+      "abbrev": "MK",
+      "color": "MK",
+      "tokens": "minor",
+      "shares": "minor",
+      "token": {
+        "label": "MK",
+        "star5": "yellow",
+        "color": "MK"
+      },
+      "tokenType": "minor",
+      "shareType": "minor"
+    },
+    {
+      "name": "St. Petersburg - Warsaw",
+      "abbrev": "SPW",
+      "color": "SPW",
+      "tokens": "minor",
+      "shares": "minor",
+      "token": {
+        "label": "SPW",
+        "star5": "SPW",
+        "color": "yellow"
+      },
+      "tokenType": "minor",
+      "shareType": "minor"
+    },
+    {
+      "name": "kharkov-rostov",
+      "abbrev": "KR",
+      "color": "KR",
+      "tokens": "minor",
+      "shares": "minor",
+      "token": {
+        "label": "KR",
+        "labelColor": "KR",
+        "star5": "tan",
+        "color": "KR"
+      },
+      "tokenType": "minor",
+      "shareType": "minor"
+    },
+    {
+      "name": "kiev-kursk",
+      "abbrev": "KK",
+      "color": "KK",
+      "tokens": "minor",
+      "shares": "minor",
+      "token": {
+        "label": "KK",
+        "star5": "white",
+        "color": "KK"
+      },
+      "tokenType": "minor",
+      "shareType": "minor"
+    },
+    {
+      "name": "Kiev-Brest",
+      "abbrev": "KB",
+      "color": "KB",
+      "tokens": "minor",
+      "shares": "minor",
+      "token": {
+        "label": "KB",
+        "star5": "KB",
+        "color": "white"
+      },
+      "tokenType": "minor",
+      "shareType": "minor"
+    },
+    {
+      "name": "Riga-Orel",
+      "abbrev": "RO",
+      "color": "RO",
+      "tokens": "minor",
+      "shares": "minor",
+      "token": {
+        "label": "RO",
+        "star5": "yellow",
+        "color": "RO"
+      },
+      "tokenType": "minor",
+      "shareType": "minor"
+    }
+  ],
+  "phases": [
+    {
+      "name": "2",
+      "limit": 4,
+      "rounds": 1,
+      "tiles": "yellow"
+    },
+    {
+      "name": "3",
+      "limit": 4,
+      "rounds": 2,
+      "tiles": "green",
+      "on": "3"
+    },
+    {
+      "name": "4",
+      "limit": 3,
+      "rounds": 2,
+      "on": "4",
+      "tiles": "green"
+    },
+    {
+      "name": "5",
+      "limit": 2,
+      "rounds": 2,
+      "tiles": "brown",
+      "on": "5"
+    },
+    {
+      "name": "6",
+      "limit": 2,
+      "rounds": 2,
+      "tiles": "brown",
+      "on": "6"
+    },    
+	{
+      "name": "8",
+      "limit": 2,
+      "rounds": 2,
+      "tiles": "brown",
+      "on": "8"
+    }
+  ],
+  "tiles": {
+	"1": 1,
+	"2": 1,
+    "5": 2,
+    "6": 2,
+    "7": 2,
+    "8": 2,
+    "9": 2,
+	"12": 1,
+    "13": 1,
+    "14": 2,
+    "15": 2,
+    "23": 1,
+    "24": 1,
+    "25": 1,
+    "26": 1,
+    "27": 1,
+    "28": 1,
+    "29": 1,
+    "39": 1,
+    "40": 1,
+    "41": 1,
+    "42": 1,
+	"43": 1,
+	"44": 1,
+    "45": 1,
+    "46": 1,
+    "47": 1,
+    "53": 2,
+	"55": 1,
+	"56": 1,
+    "57": 4,
+    "59": 2,
+	"61": 2,
+	"63": 4,
+	"64": 1,
+	"65": 1,
+	"66": 1,
+	"67": 1,
+	"68": 1,
+	"69": 1,	
+    "205": 1,
+    "206": 1,
+    "619": 2,
+    "637": 1,
+    "638": {
+      "color": "brown",
+      "values": [{ "value": 70, "angle": 210, "percent": 0.8 }],
+      "labels": [{ "label": "M", "angle": 90, "percent": 0.8 }],
+      "cities": [{ "size": 3 }],
+      "track": [
+        { "side": 1 },
+        { "side": 2 },
+        { "side": 3 },
+        { "side": 4 },
+        { "side": 5 },
+        { "side": 6 }
+      ]
+    },
+    "641": 1
+  },
+  "map": {
+    "roundTracker": {
+      "type": "row",
+      "x": 680,
+      "y": 40
+    },
+    "market": {
+      "x": 0,
+      "y": 1500
+    },
+    "players": {
+      "x": 0,
+      "y": 700
+    },
+    "hexes": [
+      {
+        "color": "plain",
+        "hexes": [
+			"A4",
+			"C2",
+			"C12",
+			"E2",
+			"E6",
+			"E10",
+			"B11",
+		  "D5",
+			"F9"
+        ]
+      },
+      {
+        "color": "yellow",
+        "values": [{ "value": 40, "angle": 210, "percent": 0.7 }],
+        "labels": [{ "label": "M", "angle": 90, "percent": 0.7 }],
+        "names": [{ "name": "Moscow", "angle": 320, "percent": 0.7 }],
+        "cities": [
+          { "angle": 30, "percent": 0.55, "companies": ["MK"] },
+          { "angle": 150, "percent": 0.55, "companies": ["N"] },
+          { "angle": 270, "percent": 0.55, "companies": ["MNN"] }
+        ],
+        "track": [
+          { "side": 2, "end": 0.25, "type": "straight" },
+          { "side": 4, "end": 0.25, "type": "straight" },
+          { "side": 6, "end": 0.25, "type": "straight" }
+        ],
+        "hexes": ["C8"]
+      },
+      {
+        "color": "plain",
+        "terrain": [
+          {
+            "type": "river",
+            "size": "medium",
+            "angle": 180,
+            "percent": 0.6
+           
+         },
+         {
+         "type": "",
+         "cost": 20,
+         "angle": 180,
+         "percent": 0.4
+         }
+        ],
+        "cities": [
+          {
+              "angle": 0,
+              "percent": 0.6,
+              "name": {
+                "name": "nizhny novgorod",
+                "offset": 50,
+                "reverse": false,
+                "straight": true
+              }
+            }
+        ],
+            "hexes": [
+                "C10"
+        ]
+      },
+      {
+        "color": "plain",
+        "terrain": [
+          {
+            "type": "river",
+            "size": "medium",
+            "angle": 180,
+            "percent": 0.6
+           
+         },
+         {
+         "type": "",
+         "cost": 20,
+         "angle": 180,
+         "percent": 0.4
+         }
+        ],
+        "companies": [
+          {
+              "label": "M&Y",
+              "angle": 0,
+              "percent": 0.6
+              }
+        ],
+            "hexes": [
+                "B9"
+        ]
+      },
+      {
+        "color": "green",
+        "values": [{ "value": 30, "angle": 180, "percent": 0.2 }],
+        "labels": [{ "label": "S", "angle": 0, "percent": 0.8 }],
+        "names": [{ "name": "St. Petersburg", "angle": 180, "percent": 0.6 }],
+        "cities": [
+          { "angle": 45, "percent": 0.55, "companies": ["SPW"] },
+          {
+            "angle": 315,
+            "percent": 0.55,
+            "companies": ["S"]
+          }
+        ],
+        "track": [
+          { "side": 6, "end": 0.25, "type": "gentle" },
+          { "side": 5, "end": 0.25, "type": "gentle" }
+        ],
+        "hexes": ["A6"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "reverse": true,
+          "name": {
+            "name": "Siberia"
+          },
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "20"
+            },
+            {
+              "color": "green",
+              "cost": "40"
+            },
+
+            {
+              "color": "brown",
+              "cost": "60"
+            }
+          ]
+        },
+        "offBoardTrack": [
+          {
+            "side": 1
+          },
+          {
+            "side": 6
+          },
+          {
+            "side": 2
+          }
+        ],
+        "hexes": [
+          "C12"
+        ]
+      },
+      {
+      "color": "gray",
+      "track": [
+        { "type": "sharp", "side": 4 }
+      ],
+      "hexes": [
+        "B1",
+        "A2"
+      ]
+      },
+      {
+        "color": "plain",
+        "cities": [
+          {
+            "companies": ["RO"],
+            "name": {
+              "name": "riga",
+              "offset": 50,
+              "reverse": true,
+              "straight": true
+            }
+          }
+        ],
+        "hexes": [
+          "B3"
+        ]
+      },
+      {
+        "color": "yellow",
+        "track": [
+          { "type": "straight", "side": 3}
+    ],
+    "hexes": ["B5"]
+  },
+  {
+    "color": "yellow",
+    "track": [
+      { "type": "straight", "side": 2}
+],
+"hexes": ["B7"]
+},
+{
+  "color": "offboard",
+  "offBoardRevenue": {
+    "reverse": true,
+    "name": {
+      "name": "Poland"
+    },
+    "revenues": [
+      {
+        "color": "yellow",
+        "cost": "30"
+      },
+      {
+        "color": "green",
+        "cost": "40"
+      },
+
+      {
+        "color": "brown",
+        "cost": "50"
+      }
+    ]
+  },
+  "offBoardTrack": [
+    {
+      "side": 3
+    },
+    {
+      "side": 4
+    },
+    {
+      "side": 5
+    }
+  ],
+  "hexes": [
+    "D1"
+  ]
+},
+{
+  "color": "plain",
+  "centerTowns": [
+    {
+      "angle": 230,
+      "percent": 0.5,
+      "name": {
+        "offset": 36,
+        "reverse": true,
+        "name": "minsk"
+      }
+    },
+    {
+      "angle": 45,
+      "rotate": 0,
+      "percent": 0.35,
+      "name": {
+        "offset": 36,
+        "reverse": true,
+        "name": "pinsk"
+      }
+    }
+  ],
+  "hexes": [
+    "D3"
+  ]
+},
+{
+  "color": "plain",
+  "centerTowns": [
+    {
+      "angle": 230,
+      "percent": 0.5,
+      "name": {
+        "offset": 36,
+        "reverse": true,
+        "name": "tula"
+      }
+    },
+    {
+      "angle": 45,
+      "rotate": 0,
+      "percent": 0.35,
+      "name": {
+        "offset": 36,
+        "reverse": true,
+        "name": "orel"
+      }
+    }
+  ],
+  "hexes": [
+    "D7"
+  ]
+},
+{
+  "color": "plain",
+  "centerTowns": [
+    {
+      "angle": 230,
+      "percent": 0.5,
+      "name": {
+        "offset": 36,
+        "reverse": true,
+        "name": "simbirsk"
+      }
+    },
+    {
+      "angle": 45,
+      "rotate": 0,
+      "percent": 0.35,
+      "name": {
+        "offset": 36,
+        "reverse": true,
+        "name": "penza"
+      }
+    }
+  ],
+  "hexes": [
+    "D11"
+  ]
+},
+{
+  "color": "plain",
+  "companies": [
+    {
+        "label": "M&R",
+        "angle": 0,
+        "percent": 0.0
+        }
+  ],
+  "hexes": ["D9"]
+},
+{
+  "color": "yellow",
+  "values": [{ "value": 30, "angle": 210, "percent": 0.7 }],
+  "names": [{ "name": "Kiev", "angle": 345, "percent": 0.7 }],
+  "labels": [{ "label": "OO", "angle": 60, "percent": 0.7 }],
+  "cities": [
+    { "angle": 150, "percent": 0.55, "companies": ["KB"] },
+    { "angle": 270, "percent": 0.55, "companies": ["KK"] }
+  ],
+  "track": [
+    { "side": 4, "end": 0.25, "type": "straight" },
+    { "side": 2, "end": 0.25, "type": "straight" }
+  ],
+  "hexes": ["E4"]
+},
+{
+  "color": "plain",
+  "cities": [
+    {
+      "name": {
+        "name": "voronezh",
+        "offset": 50,
+        "reverse": true,
+        "straight": true
+      }
+    }
+  ],
+  "hexes": [
+    "E8"
+  ]
+},
+{
+  "color": "plain",
+  "cities": [
+    {
+      "name": {
+        "name": "saratov",
+        "offset": 50,
+        "reverse": true,
+        "straight": true
+      }
+    }
+  ],
+  "hexes": [
+    "E12"
+  ]
+},
+{
+  "color": "plain",
+  "cities": [
+    {
+      "name": {
+        "name": "smolensk",
+        "offset": 50,
+        "reverse": true,
+        "straight": true
+      }
+    }
+  ],
+  "hexes": [
+    "C6"
+  ]
+},
+{
+  "color": "plain",
+  "centerTowns": [
+    {
+      "angle": 145,
+      "percent": 0.4,
+      "name": {
+        "offset": 36,
+        "reverse": true,
+        "name": "kaunas"
+      }
+    },
+{
+  "angle": 325,
+  "rotate": 0,
+  "percent": 0.35,
+  "name": {
+    "offset": 36,
+    "reverse": true,
+    "name": "vilnius"
+  }
+}
+],
+"hexes": [
+"C2"
+]
+},
+{
+  "color": "plain",
+  "cities": [
+    {
+      "name": {
+        "name": "tsaritsyn",
+        "offset": 50,
+        "reverse": true,
+        "straight": true
+      }
+    }
+  ],
+  "hexes": [
+    "F11"
+  ]
+},
+{
+  "color": "plain",
+  "cities": [
+    {
+      "companies": ["KR"],
+      "name": {
+        "name": "kharkov",
+        "offset": 50,
+        "reverse": true,
+        "straight": true
+      }
+    }
+  ],
+  "hexes": [
+    "F7"
+  ]
+},
+{
+  "color": "plain",
+  "terrain": [
+      {
+        "type": "river",
+        "size": "large"
+      },
+      {
+        "type": "",
+        "size": "large",
+        "cost": 40,
+        "percent": 0.25
+      }
+    ],
+  "hexes": [
+    "F5"
+  ]
+},
+{
+  "color": "gray",
+  "track": [
+    {
+      "side": 2,
+      "type": "sharp"
+    },
+    {
+      "side": 3,
+      "type": "sharp"
+    }
+  ],
+  "hexes": ["F3"]
+},
+{
+"color": "gray",
+    "values": [
+      {
+        "angle": 128,
+        "percent": 0.8,
+        "value": 10
+      },
+      {
+        "angle": 232,
+        "percent": 0.8,
+        "value": 10
+      }
+    ],
+    "towns": [
+      {
+        "angle": 100,
+        "name": {
+          "name": "vitebsk",
+          "rotation": 15,
+          "reverse": true
+        },
+        "percent": 0.5,
+        "rotation": 75
+      },
+      {
+        "angle": 265,
+        "name": {
+          "name": "daugavpils",
+          "rotation": 345,
+          "reverse": true
+        },
+        "percent": 0.5,
+        "rotation": 105
+      }
+    ],
+    "track": [
+      {
+        "type": "gentle",
+        "side": 1,
+        "cross": "over"
+      },
+      {
+        "type": "gentle",
+        "side": 2,
+        "cross": "under"
+      }
+    ],
+    "hexes": ["C4"]
+}
+    ]
+  }
+}
