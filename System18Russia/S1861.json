@@ -1072,7 +1072,25 @@
       }
     ],
     "hexes": ["C4"]
-}
+},
+  {
+    "color": "gray",
+    "divides": [
+      {"side": [1,4]
+    },
+    {
+    "hidden": "false"
+    }
+    ],
+    "track": [
+      {
+        "side": 1,
+        "type": "sharp"
+      }
+    ],
+    "removeBorders": [3,4,5],
+    "hexes": ["F13"]
+  }
     ]
   }
 }
