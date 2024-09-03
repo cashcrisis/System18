@@ -1,0 +1,1162 @@
+{
+  "info": {
+    "title": "System18:",
+    "subtitle": "Delta",
+    "designer": "Sam Hutchens",
+    "orientation": "vertical",
+    "titleX": -10,
+    "titleY": -140,
+    "titleSize": 50,
+    "subtitleSize": 50,
+    "designerSize": 12,
+    "mustSellInBlocks": false,
+    "currency": "$#"
+  },
+    "links": {
+    "bgg": "https://boardgamegeek.com/thread/3238633/system18-18xx-microgame-format/page/1",
+    "rules": "https://www.dropbox.com/scl/fi/or38t89eczc5eki8e21y7/System18_Rules.pdf?rlkey=n9kblkl7kvnz96oobs6hsatk2&e=1&dl=0"
+  },
+  "tokens": [
+    "round"
+  ],
+  "number_cards": [
+    "red",
+    "blue"
+  ],
+  "ipo": true,
+  "bank": "∞",
+  "players": [
+    {
+      "number": 2,
+      "capital": 450,
+      "certLimit": "20"
+    },
+    {
+      "number": 3,
+      "capital": 300,
+      "certLimit": "14"
+    },
+    {
+      "number": 4,
+      "capital": 225,
+      "certLimit": "10"
+    }
+  ],
+  "pools": [
+
+  ],
+  "rounds": [
+    {
+      "name": "OR2",
+      "color": "green"
+    },
+    {
+      "name": "OR1",
+      "color": "yellow"
+    },
+    {
+      "name": "SR",
+      "color": "gray"
+    }
+  ],
+  "turns": [
+    {
+        "name": "Corporate Cert Limit: 5"
+    },
+    {
+      "name": "Stock Round",
+      "steps": [
+        "Sell any number of certificates",
+        "Buy one certificate",
+        "Sell any number of certificates"
+      ],
+      "ordered": true
+    },
+    {
+      "name": "Operating Round",
+      "steps": [
+        "Lay or upgrade track (Connecting across the Mississippi River = $40)",
+        "Purchase a station",
+        "Run trains",
+        "Pay dividends",
+        "Purchase trains"
+      ],
+      "ordered": true
+    },
+    {
+        "name": "After A Company Has Operated Once",
+        "steps": [
+          "Sell or Issue any number of certificates",
+          "Buy one certificate (If starting a company, may buy 2 certificates)",
+          "Sell or Issue any number of certificates"
+        ],
+        "ordered": true
+      }
+  ],
+  "stock": {
+    "type": "1D",
+   "movement": {
+      "right": [
+        "Sold out",
+        "Paid dividends"
+      ],
+      "left": [
+        "Every share sold",
+        "Withheld revenue"
+      ]
+    },
+    "market": [
+            40,
+            45,
+            { "value": 50, "color": "gray" },
+            { "value": 55, "color": "gray" },
+            { "value": 60, "color": "gray" },
+            { "value": 65, "color": "gray" },
+            { "value": 70, "color": "gray" },
+            { "value": 80, "color": "gray" },
+            { "value": 90, "color": "gray" },
+            { "value": 100, "color": "gray" },
+            { "value": 120, "color": "gray" },
+            { "value": 135, "color": "gray" },
+            { "value": 150, "color": "gray" },
+            165,
+            180,
+            200,
+            220,
+            245,
+            270,
+            300,
+            330,
+            360,
+            400,
+            440,
+            490,
+            540,
+            600
+    ]
+    },
+  "trains": [
+    {
+      "name": "2",
+      "quantity": 7,
+      "price": 80,
+      "rust": "4",
+      "color": "yellow"
+    },
+    {
+      "name": "3",
+      "quantity": 5,
+      "image": "3T",
+      "price": 180,
+      "rust": "6",
+      "color": "green"
+    },
+    {
+      "name": "4",
+      "quantity": 3,
+      "image": "4T",
+      "price": 300,
+      "rust": "D",
+      "color": "green"
+    },
+    {
+      "name": "5",
+      "quantity": 2,
+      "image": "5T",
+      "price": 500,
+      "color": "brown"
+    },
+    {
+      "name": "6",
+      "quantity": 1,
+      "image": "6T",
+      "price": 630,
+      "color": "brown"
+    },
+    {
+        "name": "D",
+        "quantity": "∞",
+        "image": "Diesel",
+        "print": 5,
+        "price": 900,
+        "color": "brown"
+      }
+  ],
+  "tokenTypes": {
+    "default": [
+      "Free",
+      40
+    ],
+    "three": [
+      "Free",
+      40,
+      100
+    ]
+  },
+  "shareTypes": {
+    "default": [
+      {
+        "quantity": 1,
+        "label": "President's Certificate",
+        "percent": 20,
+        "shares": 2
+      },
+      {
+        "quantity": 8,
+        "percent": 10,
+        "shares": 1
+      }
+    ],
+    "subsidiary": [
+      {
+        "quantity": 1,
+        "label": "President's Certificate",
+        "percent": 40,
+        "shares": 2
+      },
+      {
+        "quantity": 3,
+        "percent": 20,
+        "shares": 1
+      }
+    ]
+  },
+  "floatPercent": 60,
+  "companies": [
+    {
+      "name": "illinois central",
+      "abbrev": "IC",
+      "logo": "1870/IC",
+      "color": "green",
+      "tokens": "three",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "gulf, mobile, & ohio",
+      "abbrev": "GMO",
+      "logo": "1870/GMO",
+      "color": "red",
+      "tokens": "three",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "west point route",
+      "abbrev": "WP",
+      "logo": "1832/AWP",
+      "color": "lavender",
+      "tokens": "three",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "missouri pacific lines",
+      "abbrev": "P",
+      "logo": "1870/MOPAC_B",
+      "color": "black",
+      "tokens": "three",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "southern railroad",
+      "abbrev": "SR",
+      "logo": "1870/SR",
+      "color": "yellow",
+      "tokens": "three",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    }    ,
+    {
+      "name": "Texas and Pacific",
+      "abbrev": "TP",
+      "logo": "1870/TP",
+      "color": "inky",
+      "tokens": "one",
+      "shares": "subsidiary",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+    {
+      "name": "Katy",
+      "abbrev": "MKT",
+      "logo": "1870/MKT",
+      "color": "turquoise",
+      "tokens": "one",
+      "shares": "subsidiary",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+    {
+      "name": "Frisco",
+      "abbrev": "SLSF",
+      "logo": "1870/SLSF",
+      "color": "cherry",
+      "tokens": "one",
+      "shares": "subsidiary",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+    {
+      "name": "Southern Pacific",
+      "abbrev": "SP",
+      "logo": "1870/SP",
+      "color": "orange",
+      "tokens": "one",
+      "shares": "subsidiary",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+     {
+      "name": "Santa Fe",
+      "abbrev": "ATSF",
+      "logo": "1870/ATSF",
+      "color": "lightBlue",
+      "tokens": "one",
+      "shares": "subsidiary",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    }            
+  ],
+  "phases": [
+    {
+      "name": "2",
+      "limit": 4,
+      "rounds": 1,
+      "tiles": "yellow"
+    },
+    {
+      "name": "3",
+      "limit": 4,
+      "rounds": 2,
+      "tiles": "green",
+      "on": "3"
+    },
+    {
+      "name": "4",
+      "limit": 3,
+      "rounds": 2,
+      "on": "4",
+      "tiles": "green"
+    },
+    {
+      "name": "5",
+      "limit": 2,
+      "rounds": 2,
+      "tiles": "brown",
+      "on": "5"
+    },
+    {
+      "name": "6",
+      "limit": 2,
+      "rounds": 2,
+      "tiles": "brown",
+      "on": "6"
+    },    
+	{
+      "name": "8",
+      "limit": 2,
+      "rounds": 2,
+      "tiles": "brown",
+      "on": "8"
+    }
+  ],
+  "privates": [
+  ],
+  "tiles": {
+	"1": 1,
+	"2": 1,
+    "5": 2,
+    "6": 2,
+    "7": 2,
+    "8": 2,
+    "9": 2,
+	"12": 1,
+    "13": 1,
+    "14": 2,
+    "15": 2,
+    "23": 1,
+    "24": 1,
+    "25": 1,
+    "26": 1,
+    "27": 1,
+    "28": 1,
+    "29": 1,
+    "39": 1,
+    "40": 1,
+    "41": 1,
+    "42": 1,
+	"43": 1,
+	"44": 1,
+    "45": 1,
+    "46": 1,
+    "47": 1,
+    "53": 2,
+	"55": 1,
+	"56": 1,
+    "57": 4,
+    "59": 2,
+	"61": 2,
+	"63": 4,
+	"64": 1,
+	"65": 1,
+	"66": 1,
+	"67": 1,
+	"68": 1,
+	"69": 1,	
+    "205": 1,
+    "206": 1,
+    "619": 2,
+    "W8": "1",
+    "W9": "1"
+
+  },
+  "map": {
+    "roundTracker": {
+      "type": "round",
+      "rotation": 180,
+      "x": 110,
+      "y": 200
+    },
+    "market": {
+      "x": 0,
+      "y": 1500
+    },
+    "players": {
+      "x": 0,
+      "y": 700
+    },
+    "hexes": [
+      {
+        "color": "plain",
+        "hexes": [
+      "A11",
+			"B10",
+			"B12",
+      "D8",
+      "D12"
+        ]
+      },
+      {
+        "color":"plain",
+      "borders": [
+        {
+         "side": 1,
+         "color": "water"
+        },
+        {
+         "side": 2,
+         "color": "water"
+        }
+      ],
+      "removeBorders": [
+        1,
+        2
+    ],
+    "hexes": ["D6"]
+  },
+  {
+    "color": "plain",
+    "track": [
+      {
+        "side": 6,
+        "type": "straight",
+        "end": 0.2
+      }
+    ],
+    "hexes": ["C9", "D8"]
+  },
+      {
+        "color": "yellow",
+        "hexes": [
+          "B4",
+          "B6",
+          "C3",
+			"E9",
+      "F4",
+      "F8"
+        ]
+      },
+      {
+        "color": "yellow",
+        "borders": [
+          {
+           "side": 4,
+           "color": "water"
+          },
+          {
+           "side": 5,
+           "color": "water"
+          }
+        ],
+        "removeBorders": [
+          4,
+          5
+      ],
+      "hexes": ["D4"]
+      },
+      {
+        "color": "yellow",
+        "borders": [
+          {
+           "side": 4,
+           "color": "water"
+          }
+        ],
+        "removeBorders": [
+          4
+      ],
+      "hexes": ["E3"]
+      },
+      {
+        "color": "water",
+        "hexes": ["E9", "F10", "F12"]
+      },
+      {
+        "color": "yellow",
+        "borders": [
+            {
+             "side": 4,
+             "color": "water"
+            },
+            {
+             "side": 5,
+             "color": "water"
+            }
+          ],
+          "removeBorders": [
+            4,
+            5
+        ],
+        "track": [
+          {
+            "side": 4,
+            "type": "straight",
+            "end": 0.2
+          }
+        ],
+        "hexes": [
+          "A7"
+        ]
+      },
+      {
+        "color": "yellow",
+        "cities": [
+          {
+            "angle": 0,
+            "percent": 0.0,
+            "name": {
+              "offset": 36,
+              "reverse": true,
+              "name": "baton rouge",
+              "straight": true
+            }
+          }
+        ],
+        "borders": [
+          {
+           "side": 1,
+           "color": "water"
+          },
+          {
+            "side": 2,
+            "color": "water"
+           },
+           {
+            "side": 5,
+            "color": "water"
+           },
+          {
+           "side": 6,
+           "color": "water"
+          }
+        ],
+        "removeBorders": [
+          1,
+          6,
+          2,
+          5
+      ],
+        "hexes": [
+          "E5"
+        ]
+      },
+      {
+        "color": "yellow",
+        "cities": [
+          {
+            "angle": 0,
+            "percent": 0.0,
+            "name": {
+              "offset": 36,
+              "reverse": true,
+              "name": "lafayette",
+              "straight": true
+            }
+          }
+        ],
+        "borders": [
+          {
+           "side": 3,
+           "color": "water"
+          }
+        ],
+        "removeBorders": [
+          3
+      ],
+        "hexes": [
+          "F4"
+        ]
+      },
+      {
+        "color": "yellow",
+        "cities": [
+          {
+            "angle": 0,
+            "percent": 0.0,
+            "name": {
+              "offset": 36,
+              "reverse": true,
+              "name": "alexandria",
+              "straight": true
+            }
+          }
+        ],
+        "hexes": [
+          "D2"
+        ]
+      },
+      {
+        "color": "green",
+        "track": [
+          {
+            "side": 3,
+            "type": "gentle"
+          },
+          {
+            "side": 5,
+            "type": "straight"
+          }
+        ],
+        "borders": [
+          {
+           "side": 6,
+           "color": "water"
+          }
+        ],
+        "removeBorders": [
+          6
+      ],
+        "hexes": [
+          "E7"
+        ]
+      },
+      {
+        "color": "yellow",
+        "track": [
+          {
+            "side": 2,
+            "type": "gentle"
+          }
+        ],
+        "borders": [
+          {
+           "side": 2,
+           "color": "water"
+          },
+          {
+           "side": 3,
+           "color": "water"
+          },
+          {
+            "side": 4,
+            "color": "water"
+          }
+        ],
+        "removeBorders": [
+          2,
+          3,
+          4
+      ],
+        "hexes": [
+          "F6"
+        ]
+      },
+      {
+        "color": "plain",
+        "terrain": [
+          {
+            "type": "river",
+            "size": "medium",
+            "angle": 180,
+            "percent": 0.6
+          
+      },
+      {
+        "type": "",
+        "size": "medium",
+        "cost": 20,
+        "angle": 180,
+        "percent": 0.5
+       
+     }
+          ],
+        "cities": [
+          {
+            "angle": 0,
+            "percent": 0.15,
+            "name": {
+              "offset": 36,
+              "reverse": true,
+              "name": "jackson",
+              "straight": true
+            }
+          }
+        ],
+        "borders": [
+          {
+           "side": 1,
+           "color": "water"
+          },
+          {
+           "side": 2,
+           "color": "water"
+          }
+        ],
+        "removeBorders": [
+          1,
+          2
+      ],
+        "hexes": [
+          "C7"
+        ]
+      },
+      {
+        "color": "yellow",
+        "cities": [
+          {
+            "angle": 0,
+            "percent": 0.0,
+            "name": {
+              "offset": 36,
+              "reverse": true,
+              "name": "pine bluff",
+              "straight": true
+            }
+          }
+        ],
+        "borders": [
+          {
+           "side": 4,
+           "color": "water"
+          },
+          {
+           "side": 5,
+           "color": "water"
+          }
+        ],
+        "removeBorders": [
+          4,
+          5
+      ],
+      "hexes": [
+          "B6"
+        ]
+      },
+      {
+        "color": "plain",
+        "cities": [
+          {
+            "angle": 0,
+            "percent": 0.0,
+            "name": {
+              "offset": 36,
+              "reverse": true,
+              "name": "hattiesburg",
+              "straight": true
+            }
+          }
+        ],
+        "hexes": [
+          "D10"
+        ]
+      },
+      {
+        "color": "plain",
+        "terrain": [
+          {
+            "type": "river",
+            "size": "medium",
+            "angle": 180,
+            "percent": 0.6
+          
+      },
+      {
+        "type": "",
+        "size": "medium",
+        "cost": 20,
+        "angle": 180,
+        "percent": 0.5
+       
+     }
+          ],
+        "cities": [
+          {
+            "angle": 0,
+            "percent": 0.15,
+            "name": {
+              "offset": 36,
+              "reverse": true,
+              "name": "greenwood",
+              "straight": true
+            }
+          }
+        ],
+        "track": [
+          {
+            "type": "straight",
+            "end": 0.2,
+            "side": 4
+        }
+        ],
+        "borders": [
+          {
+           "side": 1,
+           "color": "water"
+          },
+          {
+           "side": 2,
+           "color": "water"
+          }
+        ],
+        "removeBorders": [
+          1,
+          2
+      ],
+        "hexes": [
+          "B8"
+        ]
+      },
+      {
+        "color": "plain",
+        "cities": [
+          {
+            "angle": 0,
+            "percent": 0.0,
+            "name": {
+              "offset": 36,
+              "reverse": true,
+              "name": "meridian",
+              "straight": true
+            }
+          }
+        ],
+        "track": [
+          {
+            "type": "straight",
+            "end": 0.2,
+            "side": 3
+        }
+        ],
+        "hexes": [
+          "C11"
+        ]
+      },
+      {
+        "color": "plain",
+        "cities": [
+          {
+            "angle": 0,
+            "percent": 0.0,
+            "name": {
+              "offset": 36,
+              "reverse": true,
+              "name": "gulf port",
+              "straight": true
+            }
+          }
+        ],
+        "hexes": [
+          "E11"
+        ]
+      },
+      {
+        "color": "yellow",
+        "cities": [
+          {
+            "angle": 0,
+            "percent": 0.0,
+            "name": {
+              "offset": 36,
+              "reverse": true,
+              "name": "monroe",
+              "straight": true
+            }
+          }
+        ],
+        "borders": [
+          {
+           "side": 4,
+           "color": "water"
+          },
+          {
+           "side": 5,
+           "color": "water"
+          }
+        ],
+        "removeBorders": [
+          4,
+          5
+      ],
+        "hexes": [
+          "C5"
+        ]
+      },
+      {
+        "color": "offboard",
+        "cities": [
+            {
+                "percent": 0.05,
+                "angle": 180,
+                "size": 2
+          }
+        ],
+        "offBoardRevenue": {
+            "name": {
+              "name": "houston"
+            },
+        "revenues": [
+            {
+              "color": "yellow",
+              "cost": "0"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "80"
+            }
+          ],
+          "percent": 0.67,
+          "angle": 0
+        },
+        "track": [
+            {
+              "type": "offboard",
+              "side": 3
+            },
+            {
+              "type": "offboard",
+              "side": 4
+            }
+          ],
+        "hexes": [
+          "E1"
+        ]
+      },
+      {
+        "color": "offboard",
+        "cities": [
+            {
+                "percent": 0.05,
+                "angle": 180,
+                "size": 2
+          }
+        ],
+        "offBoardRevenue": {
+            "name": {
+              "name": "new orleans"
+            },
+        "revenues": [
+            {
+              "color": "yellow",
+              "cost": "30"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "80"
+            }
+          ],
+          "percent": 0.67,
+          "angle": 0
+        },
+        "track": [
+            {
+              "type": "offboard",
+              "side": 3
+            },
+            {
+              "type": "offboard",
+              "side": 1
+            },
+            {
+                "type": "offboard",
+                "side": 2
+            }
+          ],
+          "borders": [
+            {
+             "side": 1,
+             "color": "water"
+            }
+          ],
+          "removeBorders": [
+            1
+        ],
+        "hexes": [
+          "F8"
+        ]
+      },
+      {
+        "color": "offboard",
+        "cities": [
+            {
+                "percent": 0.3,
+                "size": 2
+          }
+        ],
+        "offBoardRevenue": {
+            "name": {
+              "name": "little rock"
+            },
+        "revenues": [
+            {
+              "color": "yellow",
+              "cost": "0"
+            },
+            {
+              "color": "green",
+              "cost": "20"
+            },
+            {
+              "color": "brown",
+              "cost": "40"
+            }
+          ],
+          "percent": 0.35,
+          "angle": 180
+        },
+        "track": [
+            {
+              "type": "offboard",
+              "side": 4
+            },
+            {
+                "type": "offboard",
+                "side": 5
+            },
+            {
+              "type": "offboard",
+              "side": 6
+          }
+          ],
+        "hexes": [
+          "A5"
+        ]
+      },
+      {
+        "color": "offboard",
+        "cities": [
+            {
+                "percent": 0.3,
+                "size": 2
+          }
+        ],
+        "offBoardRevenue": {
+            "name": {
+              "name": "memphis"
+            },
+        "revenues": [
+            {
+              "color": "yellow",
+              "cost": "30"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "80"
+            }
+          ],
+          "percent": 0.35,
+          "angle": 180
+        },
+        "track": [
+            {
+              "type": "offboard",
+              "side": 1
+            },
+            {
+                "type": "offboard",
+                "side": 5
+            },
+            {
+              "type": "offboard",
+              "side": 6
+          },
+          {
+            "type": "offboard",
+            "side": 4
+        }
+          ],
+          "borders": [
+            {
+             "side": 1,
+             "color": "water"
+            }
+          ],
+          "removeBorders": [
+            1
+        ],
+        "hexes": [
+          "A9"
+        ]
+      }
+      
+    ]
+  }
+}
